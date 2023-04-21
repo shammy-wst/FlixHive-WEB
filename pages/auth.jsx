@@ -31,6 +31,26 @@ const Auth = () => {
                         <button className="bg-secondary py-3 text-white rounded-md w-full mt-10 hover:bg-yellow-500 transition">
                             {variant === "login" ? "Se connecter" : "S'inscrire"}
                         </button>
+
+                        {variant === "login" && 
+                        <div className="mt-3">
+                            <div className="flex justify-between">
+                                <div>
+                                    <input type="checkbox" className="mr-2" />
+                                    <label className="text-neutral-500">Se souvenir de moi</label>
+                                </div>
+                            
+                                <div className="flex justify-between">
+                                    <a href="#" className="text-neutral-500 hover:underline">Mot de passe oublié ?</a>
+                            </div>
+                        </div>
+                            
+                        </div>
+                        }
+                       
+                        
+
+
                         <p className="text-neutral-500 mt-12">
                             {variant === "login" ? "Vous n'avez pas de compte ?" : "Vous avez déjà un compte ?"}
                             <span onClick={toggleVariant} className="text-white ml-1 hover:underline cursor-pointer">
