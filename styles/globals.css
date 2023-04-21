@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Basic style kit */
+body {
+  @apply bg-zinc-900 h-full overflow-x-hidden; /* Apply the background in the page */
+}
+
+
+/* apply :full represents the full height of the page */
+#__next{
+  @apply h-full;
+}
+
+html {
+  @apply h-full;
+}
