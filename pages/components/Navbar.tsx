@@ -53,7 +53,7 @@ const Navbar = () => {
             ${showBackground ? 'bg-zinc-900 bg-opacity-90' : ''}`}>
 
                 
-                <img src="images/logo.svg" alt="logo" className="h-4 lg:h-7"/>
+                <img src="/public/images/hero.jpg" alt="logo" className="h-4 lg:h-7"/>
                 <div className="
                 flex-row
                 ml-8
