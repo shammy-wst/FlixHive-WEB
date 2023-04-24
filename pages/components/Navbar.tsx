@@ -6,7 +6,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { AiOutlineBell } from "react-icons/ai";
 import AccountMenu from "./AccountMenu";
 
-const TOP_OFFSET = 65;
+const TOP_OFFSET = 66;
 
 const Navbar = () => {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -50,7 +50,7 @@ const Navbar = () => {
             transition
             duration-500
            
-            ${showBackground ? 'bg-zinc-900 bg-opacity-90' : ''}`}>
+            ${showBackground ? 'bg-zinc-900 bg-opacity-90' : ' '}`}>
 
                 
                 <img src="/images/logo.svg" alt="logo" className="h-4 lg:h-7"/>
