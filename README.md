@@ -36,3 +36,15 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+API_URL
+
+[https://api.themoviedb.org/3/movie/popular?api_key=db7ff1bedcfb63197436b09955f17eef]
+
+API_IMG :
+
+[`https://image.tmdb.org/t/p/w500/`]
+
+API_SEARCH :
+
+[https://api.themoviedb.org/3/search/company?api_key=db7ff1bedcfb63197436b09955f17eef&query]
