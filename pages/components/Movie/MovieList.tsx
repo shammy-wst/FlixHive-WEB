@@ -13,14 +13,14 @@ const MovieList = () => {
         fetchMovies()
     } ,[])
     return (
-    <div>
-        <h1 className={"text-white text-2xl m-5"}>Les plus populaire</h1>
-        <div className={"flex pb-5 px-5 overflow-x-auto"}>
-            {movies.map((movie,index) =>{
-                return <MovieCard key={index} {...movie}/>
-            })}
-        )</div>
-    </div>
+        <div className={"relative"}>
+            <h1 className={"text-white text-2xl m-5 px-5"}>Les plus populaire</h1>
+            <div className={"flex pb-5 px-5 overflow-x-auto"}>
+                {movies.map((movie,index) =>{
+                    return <MovieCard key={index} {...movie}/>
+                })}
+                )</div>
+        </div>
     )
 }
 
