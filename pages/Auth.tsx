@@ -49,7 +49,7 @@ const Auth = () => {
                                 />
                         </div>
                         <button className="bg-secondary py-3 text-white rounded-md w-full mt-10 hover:bg-yellow-500 transition">
-                            <Link href={"/components/Navbar"}>{variant === "login" ? "Se connecter" : "S'inscrire"}</Link>
+                            <Link href={"/"}>{variant === "login" ? "Se connecter" : "S'inscrire"}</Link>
                         </button>
                         {variant === "login" && (
                             <p className="text-white flex gap-2 mt-12">
