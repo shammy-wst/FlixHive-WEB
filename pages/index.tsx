@@ -5,6 +5,8 @@ import {server} from "@/config/index";
 import Billboard from "@/pages/components/Billboard";
 import MovieList from "@/pages/components/Movie/MovieList";
 
+import Search from "@/pages/components/Search";
+
 
 export default function Home({movies}){
     console.log(movies);
@@ -13,6 +15,8 @@ export default function Home({movies}){
             <Navbar/>
             <Billboard/>
             <MovieList/>
+
+
 
         </div>
     )
