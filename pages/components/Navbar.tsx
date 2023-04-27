@@ -5,6 +5,7 @@ import { BsChevronDown } from "react-icons/bs";
 import { AiOutlineSearch } from "react-icons/ai";
 import { AiOutlineBell } from "react-icons/ai";
 import AccountMenu from "./AccountMenu";
+import Search from "@/pages/components/Search";
 
 const TOP_OFFSET = 66;
 
@@ -76,7 +77,7 @@ const Navbar = () => {
                 </div>
                 <div className="flex flex-row ml-auto gap-7 items-center">
                     <div className="text-gray-200 hover:text-gray-300 cursort-pointer transition">
-                        <AiOutlineSearch/>
+                       <Search/>
                     </div>
                     <div className="text-gray-200 hover:text-gray-300 cursort-pointer transition">
                         <AiOutlineBell/>
