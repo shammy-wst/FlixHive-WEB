@@ -1,4 +1,5 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.andg/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This WebApp is a school project made by Icham M'MADI , Wissem KARBOUB and Samy HAMLAT, this website is a streaming website created with NEXTJS, TAILWIND, FIREBASE, REACT PLAYER and the TMDB Api.
 
 ## Getting Started
 
@@ -16,34 +17,36 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Getting errors?
+If you are getting errors this is completely normal, modules and API Key are not installed.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To install them open your terminal and type:
 
-## Learn More
+```bash
+npm install recoil
+# and
+npm install firebase
+# and
+npm install @mui/material @emotion/react @emotion/styled
+# and
+npm install react-player
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Installing API Key
+To install the API Key in order to get all the queries in the website you'll need to create a file named :
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+.env.local
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This file will contain the following Key : NEXT_PUBLIC_API_KEY=db7ff1bedcfb63197436b09955f17eef
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-API_URL
-
-[https://api.themoviedb.org/3/movie/popular?api_key=db7ff1bedcfb63197436b09955f17eef]
-
+## Additonal content
+For more information about the API :
 API_IMG :
 
-[`https://image.tmdb.org/t/p/w500/`]
+[https://image.tmdb.org/t/p/w500/]
 
 API_SEARCH :
 
