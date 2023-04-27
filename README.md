@@ -1,6 +1,11 @@
 This is a [Next.js](https://nextjs.andg/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 This WebApp is a school project made by Icham M'MADI , Wissem KARBOUB and Samy HAMLAT, this website is a streaming website created with NEXTJS, TAILWIND, FIREBASE, REACT PLAYER and the TMDB Api.
 
+## Design Figma
+
+Here you'll find the whole process of the design Page wich contains all the colors and font we are using.
+[https://www.figma.com/file/THIaySC5cCH96Raz3aydg4/Untitled?node-id=1%3A36&t=8QvjHc60n0gjUwNn-1]
+
 ## Getting Started
 
 First, run the development server:

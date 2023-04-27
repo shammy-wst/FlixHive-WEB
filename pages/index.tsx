@@ -33,7 +33,7 @@ const Home = ({ netflixOriginals,
     return (
         <div>
             <Head>
-                <title>FlixHive</title>
+                <title>Acceuil - FlixHive</title>
                 <link rel="icon" href="/Favicon.png"/>
             </Head>
             <Navbar/>
