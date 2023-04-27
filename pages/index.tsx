@@ -1,11 +1,13 @@
 import Navbar from "@/pages/components/Navbar";
-import axios from "axios";
 import Head from "next/head";
 import Billboard from "@/pages/components/Billboard";
 import MovieList from "@/pages/components/Movie/MovieList";
 import req from "@/Fetch/req";
 import {Movie} from "@/typings";
 import movieList from "@/pages/components/Movie/MovieList";
+import {useRecoilValue} from "recoil";
+import {modalState} from "@/atoms/modalAtom";
+import Modal from "@/pages/components/Modal";
 
 interface Props {
     netflixOriginals: Movie[]
@@ -25,7 +27,9 @@ const Home = ({ netflixOriginals,
                   romanceMovies,
                   topRated,
                   trendingNow, }: Props) => {
-    console.log(netflixOriginals)
+
+    const showModal = useRecoilValue(modalState)
+
     return (
         <div>
             <Head>
@@ -39,13 +43,15 @@ const Home = ({ netflixOriginals,
                     <MovieList title="Trending Now" movies={trendingNow} />
                     <MovieList title="Top Rated" movies={topRated} />
                     <MovieList title="Action Thrillers" movies={actionMovies} />
-                        {/* Ma liste */}
+                    {/* Ma liste */}
                     <MovieList title="Comedies" movies={comedyMovies} />
                     <MovieList title="Scary Movies" movies={horrorMovies} />
                     <MovieList title="Romance Movies" movies={romanceMovies} />
                     <MovieList title="Documentaries" movies={documentaries} />
                 </section>
+                {showModal && <Modal/>}
             </main>
+
         </div>
     )
 }
