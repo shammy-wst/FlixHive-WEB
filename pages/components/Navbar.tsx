@@ -5,8 +5,9 @@ import { BsChevronDown } from "react-icons/bs";
 import { AiOutlineSearch } from "react-icons/ai";
 import { AiOutlineBell } from "react-icons/ai";
 import AccountMenu from "./AccountMenu";
+import Search from "@/pages/components/Search";
 
-const TOP_OFFSET = 65;
+const TOP_OFFSET = 66;
 
 const Navbar = () => {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -39,7 +40,7 @@ const Navbar = () => {
     }, [])
 
     return (
-        <nav className="w-full fixed- z-40">
+        <nav className="w-full fixed z-40">
             <div className={`
             px-4
             md:px-16
@@ -50,7 +51,7 @@ const Navbar = () => {
             transition
             duration-500
            
-            ${showBackground ? 'bg-zinc-900 bg-opacity-90' : ''}`}>
+            ${showBackground ? 'bg-zinc-900 bg-opacity-90' : ' '}`}>
 
                 
                 <img src="/images/logo.svg" alt="logo" className="h-4 lg:h-7"/>
@@ -76,7 +77,7 @@ const Navbar = () => {
                 </div>
                 <div className="flex flex-row ml-auto gap-7 items-center">
                     <div className="text-gray-200 hover:text-gray-300 cursort-pointer transition">
-                        <AiOutlineSearch/>
+                       <Search/>
                     </div>
                     <div className="text-gray-200 hover:text-gray-300 cursort-pointer transition">
                         <AiOutlineBell/>

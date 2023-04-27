@@ -17,3 +17,26 @@ body {
 html {
   @apply h-full;
 }
+
+::-webkit-scrollbar{
+  height: 8px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#FF9000 ;
+  border-radius: 30px;
+}
+
+#bill img{
+  width: 100vw;
+  height: 50vh;
+  object-fit: cover;
+  object-position: 80% 20%;
+
+  z-index: 1;
+}
