@@ -34,7 +34,7 @@ function Billboard ({netflixOriginals}: Props) {
                         setCurrentMovie(movie)
                         setShowModal(true)
                     }}>
-                            En savoir plus <IoInformationCircle className={"h-5 w-5 md:h-8 md:w-8 text-white"}/>
+                            More informations <IoInformationCircle className={"h-5 w-5 md:h-8 md:w-8 text-white"}/>
                 </button>
             </div>
 </div>

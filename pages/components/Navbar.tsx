@@ -62,12 +62,12 @@ const Navbar = () => {
                 lg:flex
                 "
                 >
-                    <NavbarItem label="Accueil"/>
+                    <NavbarItem label="Home"/>
                     <NavbarItem label="Films"/>
-                    <NavbarItem label="Pour vous"/>
-                    <NavbarItem label="Tendance"/>
-                    <NavbarItem label="Favoris"/>
-                    <NavbarItem label="Rechercher par Langue"/>
+                    <NavbarItem label="For you"/>
+                    <NavbarItem label="Trending"/>
+                    <NavbarItem label="Favorites"/>
+                    <NavbarItem label="Search by language"/>
                 </div>
                 <div onClick={toggleMobileMenu} className="lg:hidden flex felx-row items-center gap-2 ml-8 cursor-pointer relative">
                     <p className="text-white text-sm">Browse</p>

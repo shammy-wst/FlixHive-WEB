@@ -18,12 +18,12 @@ const AccountMenu: React.FC<AccountMenuProps> = ({
 					<div className='px-3 group/item flex flex-row gap-3 items-center w-full'>
 						<img src='/images/default-user.png' alt='avatar' className='w-8 rounded-md'/>
 						<p className='text-white text-sm group-hover/item:underline'>
-							Nom d'utilisateur
+							Topf und Söhne
 						</p>
 					</div>
 					<hr className='bg-gray-600 border-0 h-px my-4'/>
 					<div className='px-3 text-center text-white text-sm hover:underline hover:text-secondary'>
-						<Link href={"/Auth"}> Se deconnecter de Flixhive</Link>
+						<Link href={"/Auth"}> Log-Out from Flixhive </Link>
 					</div>
 				</div>
 
