@@ -29,3 +29,24 @@ html {
         @apply flex h-11 w-11 items-center justify-center rounded-full border-2 border-[gray] bg-[#2a2a2a]/60 transition hover:border-white hover:bg-white/10 ;
     }
 }
+
+
+/* Scrollbar style */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2a2a2a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cf7604;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF9000;
+}
+
+/* Scrollbar style end */
+
