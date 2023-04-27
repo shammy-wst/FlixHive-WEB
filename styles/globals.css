@@ -5,7 +5,8 @@
 
 /* Basic style kit */
 body {
-  @apply bg-zinc-900 h-full overflow-x-hidden; /* Apply the background in the page */
+  @apply bg-zinc-900 h-full overflow-x-hidden ;
+    /* Apply the background in the page */
 }
 
 
@@ -16,4 +17,15 @@ body {
 
 html {
   @apply h-full;
+  @apply text-white
+}
+
+@layer components {
+    .bannerButton {
+        @apply flex items-center gap-x-2 rounded px-5 py-1.5 text-sm font-semibold transition hover:opacity-75 md:py-2.5 md:px-8 md:text-xl;
+    }
+
+    .modalButton {
+        @apply flex h-11 w-11 items-center justify-center rounded-full border-2 border-[gray] bg-[#2a2a2a]/60 transition hover:border-white hover:bg-white/10 ;
+    }
 }

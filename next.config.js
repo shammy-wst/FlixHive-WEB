@@ -5,5 +5,7 @@ const nextConfig = {
     domains: ['image.tmdb.org'],
   }
 }
+const withTM = require('next-transpile-modules')(["react-icons"]);
 
+module.exports = withTM({})
 module.exports = nextConfig

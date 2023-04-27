@@ -1,6 +1,7 @@
 import Input from "@/pages/components/Input";
 import { useCallback, useState } from "react";
 import Link from "next/link";
+import Head from "next/head";
 const Auth = () => {
     const [email, setEmail] = useState("");
     const [name, setName] = useState("");
@@ -14,6 +15,10 @@ const Auth = () => {
 
     return (
         <div className="relative h-full w-full bg-[url('/images/hero.jpg')] bg-no-repeat bg-center bg-fixed bg-cover">
+            <Head>
+                <title>FlixHive</title>
+                <link rel="icon" href="/Favicon.png"/>
+            </Head>
             <div className="bg-black w-full h-full lg:bg-opacity-50">
                 <nav className="px-12 py-5">
                     <img src={"/images/logo.svg"} className="h-12" alt="Logo" />
@@ -49,7 +54,7 @@ const Auth = () => {
                                 />
                         </div>
                         <button className="bg-secondary py-3 text-white rounded-md w-full mt-10 hover:bg-yellow-500 transition">
-                            <Link href={"/components/Navbar"}>{variant === "login" ? "Se connecter" : "S'inscrire"}</Link>
+                            <Link href={"/"}>{variant === "login" ? "Se connecter" : "S'inscrire"}</Link>
                         </button>
                         {variant === "login" && (
                             <p className="text-white flex gap-2 mt-12">
