@@ -1,6 +1,8 @@
 import React from "react";
 import {useEffect, useState} from "react";
 import axios from "axios";
+import {any} from "prop-types";
+import search from "@/pages/Search";
 
 
 const API_URL="https://api.themoviedb.org/3/movie/popular?api_key=db7ff1bedcfb63197436b09955f17eef";
@@ -41,10 +43,6 @@ function Search() {
         setQuery(e.target.value);
     }
 
-    // @ts-ignore
-    const onSearch= (searchTerm) => {
-        console.log('search', searchTerm)
-    }
 
     return(
         <div className="flex">
@@ -54,7 +52,9 @@ function Search() {
                         aria-label="search"
                         name="query">
                         <input className="text-black" onChange={(e) => changeHandler(e)}/>
+
                         <button  className="flex-1 bg-primary rounded-none">Search</button>
+                        {movies && movies.map((movie) => <div>{}</div>)}
                     </form>
                 </div>
         </div>
