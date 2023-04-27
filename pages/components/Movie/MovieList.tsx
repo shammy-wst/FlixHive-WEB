@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import MovieCard from "@/pages/components/Movie/MovieCard";
 import tmdb from "@/pages/api/tmdb";
+import Search from "@/pages/components/Search";
 
 const MovieList = () => {
     const[movies, setMovies] = useState([]);

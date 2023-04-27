@@ -2,6 +2,7 @@ import React from "react";
 import {useEffect, useState} from "react";
 import axios from "axios";
 
+
 const API_URL="https://api.themoviedb.org/3/movie/popular?api_key=db7ff1bedcfb63197436b09955f17eef";
 const API_SEARCH="https://api.themoviedb.org/3/search/movie?api_key=db7ff1bedcfb63197436b09955f17eef&query";
 
@@ -35,22 +36,25 @@ function Search() {
         }
     }
 
-
-    const changeHandler= e =>{
+// @ts-ignore
+    const changeHandler= (e):any =>{
         setQuery(e.target.value);
     }
 
+    // @ts-ignore
+    const onSearch= (searchTerm) => {
+        console.log('search', searchTerm)
+    }
 
     return(
         <div className="flex">
                 <div className="flex-1">
-                    <form className="d-flex" typeof="search" onSubmit={searchMovie}
-
+                    <form className="d-flex " typeof="search" onSubmit={(e) => searchMovie(e)}
                         placeholder="Movie Search"
                         aria-label="search"
-                        name="query"
-                        value={query} onChange={changeHandler}>
-
+                        name="query">
+                        <input className="text-black" onChange={(e) => changeHandler(e)}/>
+                        <button  className="flex-1 bg-primary rounded-none">Search</button>
                     </form>
                 </div>
         </div>
