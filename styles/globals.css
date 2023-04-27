@@ -5,7 +5,8 @@
 
 /* Basic style kit */
 body {
-  @apply bg-zinc-900 h-full overflow-x-hidden; /* Apply the background in the page */
+  @apply bg-zinc-900 h-full overflow-x-hidden ;
+    /* Apply the background in the page */
 }
 
 
@@ -16,27 +17,9 @@ body {
 
 html {
   @apply h-full;
+  @apply text-white
 }
 
-::-webkit-scrollbar{
-  height: 8px;
-  width: 8px;
-}
-
-::-webkit-scrollbar-track{
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb{
-  background:#FF9000 ;
-  border-radius: 30px;
-}
-
-#bill img{
-  width: 100vw;
-  height: 50vh;
-  object-fit: cover;
-  object-position: 80% 20%;
-
-  z-index: 1;
-}
+ .bannerButton{
+   @apply flex items-center gap-x-2 rounded px-5 py-1.5 text-sm font-semibold transition hover:opacity-75 md:py-2.5 md:px-8 md:text-xl;
+ }

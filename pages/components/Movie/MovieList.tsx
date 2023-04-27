@@ -16,7 +16,9 @@ function MovieList ({title, movies}: Props) {
         if (MovieListRef.current){
             const {scrollLeft, clientWidth}= MovieListRef.current
 
-            const scrollTo = direction === "left" ? scrollLeft - clientWidth : scrollLeft + clientWidth
+            const scrollTo = direction === "left"
+                ? scrollLeft - clientWidth
+                : scrollLeft + clientWidth
 
             MovieListRef.current.scrollTo({left: scrollTo, behavior: "smooth"})
         }
