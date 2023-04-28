@@ -21,7 +21,7 @@ function Billboard ({netflixOriginals}: Props) {
     return (
             <div className={"flex flex-col space-y-2 py-16 md:space-y-4 lg: h-[65vh] lg:justify-end lg:pb-12"}>
                 <div className={"absolute top-0 left-0 -z-10 h-[95vh] w-screen"}>
-                    <Image src={`${baseUrl}${movie?.backdrop_path || movie?.poster_path}`} layout={"fill"} objectFit={"cover"} alt={"billboard banner"} className="brightness-[60%]"/>
+                    <Image id="billy" src={`${baseUrl}${movie?.backdrop_path || movie?.poster_path}`} width={2560} height={1440} alt={"billboard banner"} className="brightness-[60%]"/>
                 </div>
                 <h1 className={"text-2xl lg:text-7xl text-white md:text-4xl font-bold"}>{movie?.title || movie?.name || movie?.original_name}</h1>
                 <p className={"text-shadow-md max-w-xs text-xs text-white md:max-w-lg md:text-lg lg:max-w-2xl lg:text-2xl"}>{movie?.overview}</p>

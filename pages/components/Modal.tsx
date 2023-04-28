@@ -8,7 +8,8 @@ import {Genre, Movie} from "@/typings";
 import {Element} from "@/typings";
 import ReactPlayer from "react-player";
 import {FaCheck, FaPlay, FaPlus, FaThumbsUp, FaVolumeOff, FaVolumeUp} from "react-icons/fa";
-
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
 
 function Modal  () {
 
@@ -118,6 +119,19 @@ function Modal  () {
                                 </div>
                             </div>
                         </div>
+                                <div className='flex flex-col'>
+                                        <Typography className='w-56 cursor-pointer text-sm font-semibold text-[#e5e5e5] transition duration-200 hover:text-white md:text-2xl'>
+                                            More like this
+                                        </Typography>
+                                        <Grid container spacing={2}>
+                                            
+                                            <Grid item xs={6} sm={4} key={sm.id}>
+                                                ZIZIZIZIIZ
+                                            </Grid>
+
+
+                                        </Grid>
+                                </div>
                     </div>
                 </div>
             </>
