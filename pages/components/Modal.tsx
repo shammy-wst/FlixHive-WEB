@@ -125,7 +125,7 @@ function Modal  () {
                                         </Typography>
                                         <Grid container spacing={2}>
                                             
-                                            <Grid item xs={6} sm={4} key={sm.id}>
+                                            
                                                 ZIZIZIZIIZ
                                             </Grid>
 
