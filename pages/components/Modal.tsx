@@ -123,14 +123,6 @@ function Modal  () {
                                         <Typography className='w-56 cursor-pointer text-sm font-semibold text-[#e5e5e5] transition duration-200 hover:text-white md:text-2xl'>
                                             More like this
                                         </Typography>
-                                        <Grid container spacing={2}>
-                                            
-                                            
-                                                ZIZIZIZIIZ
-                                            </Grid>
-
-
-                                        </Grid>
                                 </div>
                     </div>
                 </div>
